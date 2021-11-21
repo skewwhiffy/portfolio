@@ -21,12 +21,12 @@ const Contact = () => {
       [name]: value
     }
     setForm(newForm)
-    if (name === 'email' && !isEmail(value)) {
-      setErrorMessage('Email address is invalid')
+    if (!value) {
+      setErrorMessage(`Field '${name}' is required`)
       return
     }
-    if (!value) {
-      setErrorMessage(`Field ${name} is required`)
+    if (name === 'email' && !isEmail(value)) {
+      setErrorMessage('Email address is invalid')
       return
     }
     setErrorMessage('')
@@ -53,22 +53,22 @@ const Contact = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" onChange={validate} onBlur={handleChange} defaultValue={name} />
+          <input placeholder="name" type="text" name="name" onChange={validate} onBlur={handleChange} defaultValue={name} />
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" onChange={validate} onBlur={handleChange} defaultValue={email} />
+          <input placeholder="email" type="email" name="email" onChange={validate} onBlur={handleChange} defaultValue={email} />
         </div>
         <div>
           <label htmlFor="message"> Message:</label>
-          <textarea name="message" rows="5" onChange={validate} onBlur={handleChange} defaultValue={message} />
+          <textarea placeholder="message" name="message" rows="5" onChange={validate} onBlur={handleChange} defaultValue={message} />
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text" data-testid="errorText">{errorMessage}</p>
           </div>
         )}
-        <button disabled={!valid} type="submit">Submit</button>
+        <button disabled={!valid} type="submit" data-testid="submitButton">Submit</button>
       </form>
     </div>
   )
