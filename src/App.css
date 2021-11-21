@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-h1 {
+.header h1 {
   margin: 30px;
 }
 
@@ -40,4 +40,19 @@ h1 {
 
 .aboutMe p {
   padding-top: 15px;
+}
+
+.portfolio img {
+  float: left;
+  width: 20%;
+  height: auto;
+  padding-right: 10px;
+}
+
+.portfolio p {
+  display: flex;
+}
+
+.portfolio ul {
+  list-style-type: none;
 }
