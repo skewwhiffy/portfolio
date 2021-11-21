@@ -1,11 +1,36 @@
+import React, { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import './App.css'
 
-function App() {
+const choices = [
+  {
+    name: 'aboutMe',
+    displayName: 'About Me',
+  },
+  {
+    name: 'portfolio',
+    displayName: 'Portfolio',
+  },
+  {
+    name: 'contact',
+    displayName: 'Contact',
+  },
+  {
+    name: 'resume',
+    displayName: 'Resumé',
+  }
+]
+
+const App = () => {
+  const [currentChoice, setCurrentChoice] = useState(choices[0])
   return (
     <div>
-      <Header />
+      <Header
+        choices={choices}
+        currentChoice={currentChoice}
+        setCurrentChoice={setCurrentChoice}
+      />
       <section>
         <p>The content</p>
       </section>

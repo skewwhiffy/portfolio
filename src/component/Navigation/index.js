@@ -1,28 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
-const choices = [
-  {
-    name: 'aboutMe',
-    displayName: 'About Me',
-  },
-  {
-    name: 'portfolio',
-    displayName: 'Portfolio',
-  },
-  {
-    name: 'contact',
-    displayName: 'Contact',
-  },
-  {
-    name: 'resume',
-    displayName: 'Resumé',
-  }
-]
-
-const Navigation = () => {
-  const [currentChoice, setCurrentChoice] = useState(choices[0])
+const Navigation = props => {
+  const { choices, currentChoice, setCurrentChoice } = props
   const onSelect = name => {
-    console.log(name)
     setCurrentChoice(choices.filter(it => it.name === name)[0])
   }
   useEffect(() => {
