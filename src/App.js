@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
+import AboutMe from './component/AboutMe'
+import Portfolio from './component/Portfolio'
+import Contact from './component/Contact'
+import Resume from './component/Resume'
 import './App.css'
 
 const choices = [
@@ -32,7 +36,10 @@ const App = () => {
         setCurrentChoice={setCurrentChoice}
       />
       <section>
-        <p>The content</p>
+        {currentChoice.name === 'aboutMe' && (<AboutMe></AboutMe>)}
+        {currentChoice.name === 'portfolio' && (<Portfolio></Portfolio>)}
+        {currentChoice.name === 'contact' && (<Contact></Contact>)}
+        {currentChoice.name === 'resume' && (<Resume></Resume>)}
       </section>
       <Footer />
       {
