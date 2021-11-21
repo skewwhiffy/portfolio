@@ -41,7 +41,7 @@ const Portfolio = () => {
       {
         sites.map(it => {
           return (
-            <div>
+            <div key={it.name}>
               <h2>{it.name}</h2>
               <p>
                 <img
@@ -49,11 +49,11 @@ const Portfolio = () => {
                   src={require(`../../asset/portfolio/${it.screenshot}`).default}
                   alt={`${it.name} screenshot`}
                 />
-                <ul>
-                  <li>URL: <a href={it.url}>{it.url}</a></li>
-                  <li>Github: <a href={it.github}>{it.github}</a></li>
-                </ul>
               </p>
+              <ul>
+                <li>URL: <a href={it.url}>{it.url}</a></li>
+                <li>Github: <a href={it.github}>{it.github}</a></li>
+              </ul>
               <br />
             </div>
           )
