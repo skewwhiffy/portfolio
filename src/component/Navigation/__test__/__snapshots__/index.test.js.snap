@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="navigation"
+  >
+    <ul>
+      <li
+        class="selected"
+      >
+        <span
+          class="selection"
+        >
+          Dummy Choice For Testing
+        </span>
+      </li>
+      <li
+        class=""
+      >
+        <span
+          class="selection"
+        >
+          Another Choice For Testing
+        </span>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

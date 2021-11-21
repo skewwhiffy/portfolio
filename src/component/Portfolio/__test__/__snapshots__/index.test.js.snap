@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="portfolio"
+  >
+    <h1>
+      Portfolio
+    </h1>
+    <p>
+      <b>
+        The following information is not real! Screenshots and URLs are for demonstration purposes only!
+      </b>
+    </p>
+    <div>
+      <h2>
+        Twitter
+      </h2>
+      <p>
+        <img
+          alt="Twitter screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://twitter.com"
+          >
+            https://twitter.com
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/twitter"
+          >
+            https://github.com/twitter
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+    <div>
+      <h2>
+        XKCD
+      </h2>
+      <p>
+        <img
+          alt="XKCD screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://xkcd.com"
+          >
+            https://xkcd.com
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/xkcd"
+          >
+            https://github.com/xkcd
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+    <div>
+      <h2>
+        Signal
+      </h2>
+      <p>
+        <img
+          alt="Signal screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://signal.org"
+          >
+            https://signal.org
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/signalapp"
+          >
+            https://github.com/signalapp
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+    <div>
+      <h2>
+        OnePlus
+      </h2>
+      <p>
+        <img
+          alt="OnePlus screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://www.oneplus.com"
+          >
+            https://www.oneplus.com
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/OnePlusOSS"
+          >
+            https://github.com/OnePlusOSS
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+    <div>
+      <h2>
+        QMK Keyboards
+      </h2>
+      <p>
+        <img
+          alt="QMK Keyboards screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://qmk.fm"
+          >
+            https://qmk.fm
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/qmk"
+          >
+            https://github.com/qmk
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+    <div>
+      <h2>
+        OLKB Keyboards
+      </h2>
+      <p>
+        <img
+          alt="OLKB Keyboards screenshot"
+          class="screenshot"
+        />
+      </p>
+      <ul>
+        <li>
+          URL: 
+          <a
+            href="https://olkb.com/"
+          >
+            https://olkb.com/
+          </a>
+        </li>
+        <li>
+          Github: 
+          <a
+            href="https://github.com/olkb"
+          >
+            https://github.com/olkb
+          </a>
+        </li>
+      </ul>
+      <br />
+    </div>
+  </div>
+</DocumentFragment>
+`;
